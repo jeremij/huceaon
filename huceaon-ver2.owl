@@ -1,0 +1,1853 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#"
+     xml:base="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1">
+        <owl:imports rdf:resource="http://www.semanticweb.org/mdebe/ontologies/2022/10/UNSDG"/>
+        <ns:license xml:lang="en">https://creativecommons.org/licenses/by/3.0/</ns:license>
+        <terms:creator xml:lang="en">Ermias Abebe Kassa
+University of South Africa 
+Addis Ababa University</terms:creator>
+        <terms:description xml:lang="en">A Human capabilities Ontology for Enterprise Architecture</terms:description>
+        <terms:title xml:lang="en">HuCEAOn</terms:title>
+        <owl:versionInfo xml:lang="en">Version 1.0 November 21,2022</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#addresses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#addresses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_view"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#concern"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#exhibits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#exhibits">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#system"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#expresses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#expresses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#frames -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#frames">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#governs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#governs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_viewpoint"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#model_kind"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_model"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_view"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#guides -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#guides">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#has">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#has_description -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#has_description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_description"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#has_interest_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#has_interest_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#identifies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#identifies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#impacts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#impacts">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#influences -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#influences">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#Organizational_need -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#Organizational_need">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">670.3904642324778</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">669.508716905428</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#affilation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#affilation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">250.33877627249714</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">31.081915690592172</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Nussbaum:</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">227.52826947009055</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">32.91749127448521</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_description -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_description">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">258.1297126475048</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">168.27776409641072</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_framework">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">206.02445935773488</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">67.95819390590327</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_model">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">194.56721763771773</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">64.63740239013663</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_rationale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_rationale">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">125.55342508197337</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">282.01251188094267</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_view -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_view">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">123.69236615778001</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">72.49846192014242</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_viewpoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_viewpoint">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">609.9652135477947</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">290.1691834437192</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#bank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#bank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_type"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">130.6067085206337</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.986109270088125</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#bodily_health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#bodily_health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">134.08671959036297</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">237.40746234211298</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Nussbaum:</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#bodily_integrity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#bodily_integrity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.174766918258637</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">208.13032073701066</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Nussbaum:</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.9349933999645</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">201.42169627481002</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#change_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#change_management">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">440.0712611090242</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">440.00219359403224</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#concern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#concern">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">108.8122925736881</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">64.46699584231688</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#control_over_environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#control_over_environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">599.5717103037487</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">190.1340797878844</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Nussbaum:</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#conversion_factor">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">37.05902526409823</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">34.50104715646333</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#correspondence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#correspondence">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">609.9822276767852</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">99.70062950189867</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#correspondence_rule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#correspondence_rule">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">450.2532036739198</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">610.1018203747626</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#cost_conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#cost_conversion_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#environmental_conversion_factor"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">259.09237275299154</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">59.98132035882884</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#credit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#credit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">276.49862437202313</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">234.17931273132422</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>De&apos;;  2006</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#cultural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#cultural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">286.47471709331796</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">21.358943522368094</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Gigler; 2004</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#data_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#data_management">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">138.8720469592187</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">267.65826826890856</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">339.9945593971827</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">919.6633915394278</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Gigler; 2004</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic_conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic_conversion_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#personal_conversion_factor"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">580.4597012495881</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.360479036969082</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic_resources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic_resources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">216.61089689089718</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">137.02699764166016</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>De&apos;;  2006</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic_sustainability_goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic_sustainability_goal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#goal"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.276252354953822</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">58.508560827681066</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_type"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">17.258797188062996</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">227.85045874221296</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#educational_conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#educational_conversion_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#social_conversion_factor"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">126.66810699381493</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.559605535335866</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#emotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#emotion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">80.95867252289186</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">129.1733914890537</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Nussbaum:</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#employee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#stakeholder"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">170.2720391579298</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">560.2036640178627</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">229.68668055061238</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">106.83249704073323</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_constraint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_constraint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">87.99633379977102</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">120.23160630644333</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_principle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_principle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">149.64782298262918</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">27.424102026018275</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">125.36672023807232</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.12339795562413</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">138.1691933357588</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.91198787451862</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_type">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">225.036611827931</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">199.99185891943284</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_vision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_vision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">520.248085082789</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">300.3513730762287</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#environmental_conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#environmental_conversion_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#conversion_factor"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">151.86598894785266</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">83.75139529417255</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#environmental_sustainability_goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#environmental_sustainability_goal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#goal"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">280.55043545706667</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.991080297343963</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#evaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#evaluation">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">669.5410259184337</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">419.94703290751517</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#for_profit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#for_profit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_type"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.2326369074216</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.939911678246313</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#goal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#sustainability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">252.8857601927216</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">161.02164993245526</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#government -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#government">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_type"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">245.30874058982604</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">64.90950337073852</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_access -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_access">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">38.69832689481659</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">242.4617880486168</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>De&apos;;  2006</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#individual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#individual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#individual_capabilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#individual_capabilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">106.67694645819114</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">211.78079815856188</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#individual_conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#individual_conversion_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#personal_conversion_factor"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">410.3594452971614</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">69.52445465802643</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#informational -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#informational">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.2234775112898</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.268975817117163</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Gigler; 2004</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#infrastructure_conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#infrastructure_conversion_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#environmental_conversion_factor"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">54.17913170903351</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">159.55035762452988</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#legal_conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#legal_conversion_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#social_conversion_factor"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">169.7329379412212</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">185.50922687495043</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#life -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#life">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">32.919634184959335</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">270.12299626855435</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Nussbaum:</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#literacy_conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#literacy_conversion_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#personal_conversion_factor"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">241.6142945614299</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">98.92741966951851</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#market -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#market">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.52205628080837</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">250.13272563382438</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>De&apos;;  2006</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#methodology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#methodology">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">276.49389217370424</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.221055075173343</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#model_kind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#model_kind">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">44.451561068922636</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">229.3395120197722</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#modeling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#modeling">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">91.72786443284511</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">61.063990241950194</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#not_for_profit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#not_for_profit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_type"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">225.6616722596769</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">115.45178826918485</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#openness_conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#openness_conversion_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#social_conversion_factor"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">128.67691019913943</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">124.95977435260436</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#stakeholder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#organizational_driver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#organizational_driver">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">296.4296681089657</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.42404291269565</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#personal_conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#personal_conversion_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#conversion_factor"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.865863322729691</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">92.31067316669824</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#play -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#play">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">230.56405743845707</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.229520495431018</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Nussbaum:</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#policy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#policy">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">299.406538664764</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">239.8768691365628</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#political -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#political">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">188.03189429096534</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">89.91246613679341</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#political_participation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#political_participation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">225.65847079260806</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">215.7970812565876</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>De&apos;;  2006</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#positioning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#positioning">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">201.03348517225453</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">155.97498738365272</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#practical_reason -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#practical_reason">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">34.78256023427694</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">211.56520997306922</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Nussbaum:</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#principle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#principle">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">91.90680848628604</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">149.36358891771795</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#process">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">124.65369873015875</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">159.76520818583967</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#product">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">680.4890847800491</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">519.5457113258503</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#project_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#project_management">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">230.31901627807275</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">420.3366177486091</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#protective_security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#protective_security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">46.75784233379003</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">209.9507250452248</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>De&apos;;  2006</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#psychological -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#psychological">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">79.50803096954604</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">979.5558374550105</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Gigler; 2004</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#quality">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">211.85772303144392</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">102.51814458606982</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#realation_to_nature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#realation_to_nature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">52.05464532454683</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">295.18344639782066</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Nussbaum:</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#sense_imagination_thought -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#sense_imagination_thought">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">105.23185148982424</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">113.06673186443109</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Nussbaum:</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#shareholder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#shareholder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#stakeholder"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">82.72334075844661</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">126.50358399464675</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#social_capabilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#social_capabilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.55273604158718</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">730.2874671190605</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#social_conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#social_conversion_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#conversion_factor"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">163.94771432617102</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">47.84232826918121</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Gigler; 2004</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#social_sustainability_goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#social_sustainability_goal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#goal"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">127.18042605378464</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">165.50842169414406</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#stakeholder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#stakeholder">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">31.413304079153036</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">161.01658007542983</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#standard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#standard">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">66.09222855990477</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">99.6475345061198</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#sustainability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#sustainability">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">429.7515536052298</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">759.6755528113376</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#system">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">158.56159167408518</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.9983058395293</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#target -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#target">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#sustainability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">499.9196011780281</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">850.1803673651382</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#technological_access_conversion_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#technological_access_conversion_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#environmental_conversion_factor"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">153.14112298803485</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">263.3731541008603</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#tool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#tool">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">72.34596317199896</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.8506672976481244</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#transparency_gurantee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#transparency_gurantee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">111.02534782149627</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">41.4969584193877</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>De&apos;;  2006</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#value_proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#value_proposition">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">470.17452518193795</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1009.6281982118618</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#alternative_sources_of_income -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#alternative_sources_of_income">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enhanced_ICT_literacy_and_technology_skill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enhanced_ICT_literacy_and_technology_skill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#social_conversion_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enhanced_capacity_to_produce_and_publish_local_content -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enhanced_capacity_to_produce_and_publish_local_content">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#informational"/>
+        <rdfs:comment>Gigler; 2004</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enhanced_entrepreneurial_skills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enhanced_entrepreneurial_skills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enhanced_information_literacy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enhanced_information_literacy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#informational"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enhanced_leadership_skills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enhanced_leadership_skills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#social_conversion_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_ability_to_analyze_own_situation_and_solve_problems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_ability_to_analyze_own_situation_and_solve_problems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#psychological"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_ability_to_communicate_with_family_members_and_friends_abroad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_ability_to_communicate_with_family_members_and_friends_abroad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#informational"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_access_to_government_information_and_services -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_access_to_government_information_and_services">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#political"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_access_to_markets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_access_to_markets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_awareness_about_political_issues -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_awareness_about_political_issues">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#political"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_capabilities_to_interact_with_local_governments -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_capabilities_to_interact_with_local_governments">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#political"/>
+        <rdfs:comment>Gigler; 2004</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_capacity_to_use_different_forms_of_ICTs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_capacity_to_use_different_forms_of_ICTs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#informational"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_employment_opportunities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_employment_opportunities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_income_through_increased_timeliness_of_sales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_income_through_increased_timeliness_of_sales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic"/>
+        <rdfs:comment>Gigler; 2004</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_income_through_lower_transaction_costs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_income_through_lower_transaction_costs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_income_through_reduced_transport_needs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_income_through_reduced_transport_needs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_program_management_skills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#improved_program_management_skills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#social_conversion_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#increased_awareness_of_own_cultural_identity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#increased_awareness_of_own_cultural_identity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#cultural"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#productive_assets_strengthened -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#productive_assets_strengthened">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#economic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#strengthened_ability_to_influence_strategic_life_choices -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#strengthened_ability_to_influence_strategic_life_choices">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#psychological"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#strengthened_self-esteem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#strengthened_self-esteem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#psychological"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#sense_of_inclusion_in_the_‘modern’_world -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#sense_of_inclusion_in_the_‘modern’_world">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#psychological"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#use_of_ICTs_as_a_form_of_cultural_expression_(i.e._design_of_computer_graphics,_websites) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#use_of_ICTs_as_a_form_of_cultural_expression_(i.e._design_of_computer_graphics,_websites)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#cultural"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#Organizational_need"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_description"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_framework"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_model"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_rationale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_view"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_viewpoint"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#change_management"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#concern"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#correspondence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#correspondence_rule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#data_management"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise_requirement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#evaluation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#methodology"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#model_kind"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#modeling"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#organizational_driver"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#policy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#positioning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#principle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#process"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#product"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#project_management"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#quality"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#stakeholder"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#standard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#system"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#tool"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#value_proposition"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_description"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_model"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_rationale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_view"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_viewpoint"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#concern"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#correspondence"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#correspondence_rule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#model_kind"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#policy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#principle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#process"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#product"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#stakeholder"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#system"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_description"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#architecture_rationale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#capability"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#enterprise"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#policy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#principle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#process"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#product"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#stakeholder"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#system"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#employee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#group"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#individual"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#organization"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#shareholder"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#for_profit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#government"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ermias/ontologies/2022/10/huceaon-ver1#not_for_profit"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
